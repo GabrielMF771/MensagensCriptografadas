@@ -26,7 +26,7 @@ Em que,
 
 • $x$ é a posição atual do caractere, começando por 1.
 
-Sua miss˜ao ´e criar um algoritmo que decifre as mensagens intercepadas.
+Sua missão é criar um algoritmo que decifre as mensagens intercepadas.
 
 A mensagem está codificada em hexadecimal, em que cada 2 caracteres da mensagem representam um caractere da mensagem, ou seja, cada mensagem pode ter até 50 caracteres.
 O texto é encerrado se encontrado o caractere nulo, representado pelo valor 00. O valor 00 encerrará o texto independente do resultado da função. 
