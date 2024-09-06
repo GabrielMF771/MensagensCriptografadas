@@ -3,7 +3,7 @@
     #include <stdlib.h>
     #include <string.h>
 
-    // Fun‡?o que verifica a se um caractere faz parte ou n?o da mensagem
+    // Função que verifica a se um caractere faz parte ou não da mensagem
 
     int func_val(int x, int b) {
         long double resultado;
@@ -12,10 +12,10 @@
 
         resultado = a0 + (a1 + b) * x + a2 * pow(x, 2) + a3 * pow(x, 3) + a4 * pow(x, 4) + a5 * pow(x, 5) + a6 * pow(x, 6) + a7 * pow(x, 7);
 
-        return resultado;
+        return round(resultado);
     }
 
-    // Fun‡?o principal
+    // Função principal
 
     int main(){
 
@@ -26,7 +26,7 @@
         scanf("%d", &numMsg);
 
         for(i = 0; i < numMsg; i++){
-            printf("Digite o valor do coeficiente ""b"": ");
+            printf("\nDigite o valor do coeficiente ""b"": ");
             scanf("%d", &b);
 
             printf("Digite a mensagem codificada: ");
@@ -40,13 +40,13 @@
                 int x = j / 2 + 1;
                 int valorDecimal;
                 sscanf(&msgCodificada[j], "%2x", &valorDecimal);
-                // printf(" Posicao: %d, Valor hexadecimal: %c%c, Valor decimal: %d\n", x, msgCodificada[j], msgCodificada[j + 1], valorDecimal);
-
+                //printf(" Posicao: %d, Valor hexadecimal: %c%c, Valor decimal: %d\n", x, msgCodificada[j], msgCodificada[j + 1], valorDecimal);
+				//printf("\n------ %d ---------\n", func_val(x, b));
                 if (func_val(x, b) != 0){
                     printf("%c", valorDecimal);
                 }
 
-                // Verifica‡?o que interrompe a leitura
+                // Verificação que interrompe a leitura
                 if(valorDecimal == 0){
                     break;
                 }
