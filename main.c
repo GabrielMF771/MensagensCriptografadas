@@ -3,7 +3,7 @@
     #include <stdlib.h>
     #include <string.h>
 
-    // Função que verifica a se um caractere faz parte ou não da mensagem
+    // FunÃ§Ã£o que verifica a se um caractere faz parte ou nï¿½o da mensagem
 
     int func_val(int x, int b) {
         long double resultado;
@@ -15,7 +15,7 @@
         return round(resultado);
     }
 
-    // Função principal
+    // FunÃ§Ã£o principal
 
     int main(){
 
@@ -40,13 +40,14 @@
                 int x = j / 2 + 1;
                 int valorDecimal;
                 sscanf(&msgCodificada[j], "%2x", &valorDecimal);
+
                 //printf(" Posicao: %d, Valor hexadecimal: %c%c, Valor decimal: %d\n", x, msgCodificada[j], msgCodificada[j + 1], valorDecimal);
-				//printf("\n------ %d ---------\n", func_val(x, b));
+
                 if (func_val(x, b) != 0){
                     printf("%c", valorDecimal);
                 }
 
-                // Verificação que interrompe a leitura
+                // VerificaÃ§Ã£o que interrompe a leitura
                 if(valorDecimal == 0){
                     break;
                 }
