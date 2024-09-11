@@ -24,13 +24,16 @@
 
         printf("Quantas mensagens deseja decodificar? ");
         scanf("%d", &numMsg);
+        fflush(stdin);
 
         for(i = 0; i < numMsg; i++){
             printf("\nDigite o valor do coeficiente ""b"": ");
             scanf("%d", &b);
+            fflush(stdin);
 
             printf("Digite a mensagem codificada: ");
             scanf("%s", msgCodificada);
+            fflush(stdin);
 
             int tamanhoString = strlen(msgCodificada);
             printf("\nMensagem decodificada: ");
@@ -40,6 +43,7 @@
                 int x = j / 2 + 1;
                 int valorDecimal;
                 sscanf(&msgCodificada[j], "%2x", &valorDecimal);
+                fflush(stdin);
 
                 //printf(" Posicao: %d, Valor hexadecimal: %c%c, Valor decimal: %d\n", x, msgCodificada[j], msgCodificada[j + 1], valorDecimal);
 
