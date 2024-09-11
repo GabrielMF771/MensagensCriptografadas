@@ -3,7 +3,7 @@
     #include <stdlib.h>
     #include <string.h>
 
-    // Função que verifica a se um caractere faz parte ou n�o da mensagem
+    // Função que verifica a se um caractere faz parte ou não da mensagem
 
     int func_val(int x, int b) {
         long double resultado;
