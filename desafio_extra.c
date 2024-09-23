@@ -3,7 +3,7 @@
 
 int main () {
 
-    float n1 = 0, n2 = 0, n3 = 0, ppd = 0, eu = 0, notaFinal = 0;
+    float n1, n2, n3, ppd, eu, notaFinal;
     int euflag, n3flag;
 
     printf("\nInsira a nota da N1: ");
@@ -27,7 +27,7 @@ int main () {
         exit(3);
     }
 
-    printf("\nFoi realizado o Exame Unificado? (1: SIM) (0:NAO): ");
+    printf("\nFoi realizado o Exame Unificado? (1: SIM) (0: NAO): ");
     scanf("%d", &euflag);
 
     if(euflag < 0 || euflag > 1){
@@ -39,7 +39,7 @@ int main () {
         scanf("%f", &eu);
     }
     
-    printf("\nFoi realizado a N3? (1: SIM) (0:NAO): ");
+    printf("\nFoi realizado a N3? (1: SIM) (0: NAO): ");
     scanf("%d", &n3flag);
     
     if(n3flag < 0 || n3flag > 4.5){
