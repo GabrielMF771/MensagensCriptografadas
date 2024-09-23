@@ -65,8 +65,18 @@ int main () {
 
 
     notaFinal = n1 + n2 + ppd + eu;
+
+    if (notaFinal > 10){
+        notaFinal = 10;
+    }
     
     printf("\na nota final sera: %.2f", notaFinal);
+    
+    if (notaFinal < 7){
+        printf("\nReprovado");
+    } else {
+        printf("\nAprovado");
+    }
     
     
     return 0;
